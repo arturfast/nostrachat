@@ -1,0 +1,42 @@
+[package]
+name = "nostrachat"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+colored = "*"
+clap = { version = "3.1.6", features = ["derive"] }
+cursive = { version = "0.20.0", features = ["toml", "crossterm-backend"] }
+term_size = "*"
+crossterm = "*"
+console = "*"
+termion = "*"
+#inquire = { path = "./inquire", default-features = false, features = ["crossterm"] }
+rustyline = { version = "*", features = ["custom-bindings", "derive"] }
+open = "*"
+tempfile = "3.2.0"
+toml = "0.7.2"
+directories = "*"
+serde = "*"
+#tungstenite = { version = "0.18", features = ["rustls-tls-webpki-roots"]}
+tokio-tungstenite = { version = "*", features = ["native-tls"] }
+tokio = { version = "1", features = ["full"] }
+nostr = { version = "0.21.0" }
+serde_json = "*"
+futures-util = "*"
+futures = "*"
+futures-channel = "*"
+url = "*"
+rand = { version = "0.8.5", features = ["small_rng"] }
+chrono = "*"
+hkdf = "*"
+sha2 = "*"
+#secp256k1 = { version = "*", features = ["rand-std"] }
+async-trait = "*"
+crossbeam-channel = "*"
+enum_dispatch = "*"
+hex = "*"
+
+[profile.release]
+strip = "debuginfo"
+

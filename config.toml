@@ -1,0 +1,22 @@
+relays = ["wss://relay1.nostrchat.io", "wss://relay2.nostrchat.io", "wss://relay.damus.io", "wss://arc1.arcadelabs.co", "wss://nos.lol", "wss://relay.snort.social", "wss://nostr.wine"]
+channels = ["9b0a71a677f914555d9068c85e9c1a16495a9faa98b08ba6ed82c4780062dd4d"] # Add a list of channels here, in Hex format. 
+chats = [""] # Doesn't work for now. 
+privkey = "" # Put your private key here in bech32 format (nsec).
+pubkey = "" # Leave this empty
+
+# Theming may or may not work.
+[theme]
+shadow = false
+borders = "None"
+
+[theme.colors]
+background = "default"
+#shadow = "default"
+view = "default"
+primary = "default"
+secondary = "default"
+tertiary = "default"
+title_primary = "default"
+title_secondary = "default"
+highlight = "green"
+highlight_inactive = "default"
